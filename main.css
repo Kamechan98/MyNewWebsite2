@@ -1,0 +1,105 @@
+header {
+    border: 3px solid black;
+    gap: 2px;
+    text-align: center;
+    background-color: rebeccapurple;
+}
+body {
+background-color: darkblue;
+}
+
+@media screen and (min-width: 600px) {
+    .container {
+        flex-direction: row;
+    }
+    .container-sm {
+        flex-direction: row;
+        width: 10%;
+    }
+    .container-md {
+        flex-direction: row;
+        width: 30%;
+    }
+
+    .center {
+        display: block;
+        width: 100%;
+    }
+}
+
+.container {
+    display: flex;
+    gap: 20px;
+
+    justify-content: center;
+    flex-flow: row wrap;
+    align-items: center;
+}
+
+.container-sm {
+    display: flex;
+
+    justify-content: space-around;
+    flex-flow: row wrap;
+    align-items: space-around;
+    margin: 5px;
+
+    background-color: purple;
+    width: 15%;
+    height: 700px;
+    border: 5px solid black;
+}
+
+.container-md {
+    display: flex;
+
+    justify-content: center;
+    flex-flow: row wrap;
+    align-items: center;
+
+    background-color:skyblue;
+    width: 30%;
+    height: 600px;
+    border: 5px solid black;
+}
+
+.container-md {
+    display: flex;
+
+    justify-content: center;
+    flex-flow: row wrap;
+    align-items: flex-start;
+    margin-top: 5px;
+
+    background-color:aquamarine;
+    width: 30%;
+    height: 600px;
+    border: 5px solid black;
+}
+
+.container-sm {
+        display: flex;
+    
+        justify-content:space-around;
+        flex-flow: row wrap;
+        align-items: flex-start;
+        margin: 5px, 5px, 5px, 5px;
+    
+        background-color: purple;
+        padding: 5px;
+        width: 15%;
+        height: 600px;
+        border: 5px solid black;
+    }
+
+    .center {
+        display: block;
+        width: 100%;
+    }
+
+    footer {
+        position: fixed;
+        bottom: 0px;
+        right: 0px;
+        border: 2px solid black;
+    }
